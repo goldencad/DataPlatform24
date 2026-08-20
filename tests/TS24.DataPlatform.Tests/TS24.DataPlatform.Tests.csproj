@@ -13,6 +13,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="../../src/TS24.DataPlatform.Foundation/TS24.DataPlatform.Foundation.csproj" />
+    <ProjectReference Include="../../src/TS24.DataPlatform.Deployment/TS24.DataPlatform.Deployment.csproj" />
     <ProjectReference Include="../../src/TS24.DataPlatform.Provider.MariaDb/TS24.DataPlatform.Provider.MariaDb.csproj" />
   </ItemGroup>
 </Project>
