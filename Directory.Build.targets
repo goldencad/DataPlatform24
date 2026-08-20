@@ -1,0 +1,12 @@
+<Project>
+  <Target Name="RejectTechnologyPackagesInCore"
+          BeforeTargets="ResolvePackageAssets"
+          Condition="$([System.String]::Copy('$(MSBuildProjectName)').Contains('.Foundation')) Or $([System.String]::Copy('$(MSBuildProjectName)').Contains('.Domain'))">
+    <ItemGroup>
+      <_ForbiddenCorePackage Include="@(PackageReference)"
+                             Condition="$([System.String]::Copy('%(Identity)').Contains('MySql')) Or $([System.String]::Copy('%(Identity)').Contains('MariaDb')) Or $([System.String]::Copy('%(Identity)').Contains('MongoDB'))" />
+    </ItemGroup>
+    <Error Condition="'@(_ForbiddenCorePackage)' != ''"
+           Text="Technology package(s) @(_ForbiddenCorePackage) are forbidden in Foundation and Domain projects." />
+  </Target>
+</Project>

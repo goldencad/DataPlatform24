@@ -1,0 +1,5 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <ProjectReference Include="../TS24.DataPlatform.Foundation/TS24.DataPlatform.Foundation.csproj" />
+  </ItemGroup>
+</Project>
