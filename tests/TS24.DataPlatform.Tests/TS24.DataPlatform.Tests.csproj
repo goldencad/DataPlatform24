@@ -11,4 +11,7 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="../../src/TS24.DataPlatform.Foundation/TS24.DataPlatform.Foundation.csproj" />
+  </ItemGroup>
 </Project>
