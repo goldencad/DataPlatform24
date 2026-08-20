@@ -1,0 +1,8 @@
+{
+  "ConnectionStrings": {
+    "LegacyPeople": "Server=fixture-db;Database=legacy_people;User=fixture;Password=fixture-secret"
+  },
+  "MongoDatabase": "legacy_documents",
+  "MongoCollection": "document_metadata",
+  "Provider": "MariaDB"
+}

@@ -1,0 +1,20 @@
+{
+  "evidence": [
+    {
+      "found": true,
+      "database": "legacy_people",
+      "schema_or_collection": "hr",
+      "object": "employee",
+      "object_type": "table",
+      "dependency": "identity.company.id",
+      "risk": "cross-schema reference"
+    },
+    {
+      "found": true,
+      "database": "legacy_people",
+      "schema_or_collection": "hr",
+      "object": "active_employee",
+      "object_type": "view"
+    }
+  ]
+}
