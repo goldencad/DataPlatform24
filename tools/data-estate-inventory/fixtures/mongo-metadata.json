@@ -1,0 +1,21 @@
+{
+  "evidence": [
+    {
+      "found": true,
+      "database": "legacy_documents",
+      "schema_or_collection": "document_metadata",
+      "object": "document_metadata",
+      "object_type": "collection",
+      "details": {
+        "validator": {"$jsonSchema": {"bsonType": "object"}}
+      }
+    },
+    {
+      "found": true,
+      "database": "legacy_documents",
+      "schema_or_collection": "document_metadata",
+      "object": "companyId_1",
+      "object_type": "index"
+    }
+  ]
+}
